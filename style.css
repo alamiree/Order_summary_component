@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+}
+.template{
+    background-color: hsl(225, 100%, 94%);
+    height: 100vh;
+    position: relative;
+}
+
+.template .header{
+    background: url('./images/pattern-background-desktop.svg');
+    height: 400px;
+    background-position: center center;
+}
+
+.card{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.card .img img{
+    width: 100%;
+}
+.card .img{
+    margin-bottom: 30px;
+}
+.card-desc{
+    text-align: center;
+}
+.card-desc h1{
+    margin-bottom: 15px;
+}
+.card-desc p{
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plan-content{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+}
+.plan-btn{
+    width: 85%;
+    background: hsl(245, 75%, 52%);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 15px hsl(225deg 100% 75%);
+    cursor: pointer;
+}
+.plan-btn a{
+    text-decoration: none;
+    color: hsl(225, 100%, 98%);
+}
+
+.cancel-btn{
+    margin-bottom: 40px;
+}
+.cancel-btn a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+@media(max-width: 767px){
+    .card{
+        width: 90%;
+    }
+    .card .img img{
+        width: 100%;
+    }
+    .card-desc h1{
+        font-size: 24px;
+    }
+    .card-desc p{
+        width: 70%;
+        margin: auto;
+        font-size: 10px;
+        line-height: 1.5;
+    }
+
+    .plan-content{
+        width: 90%;
+    }
+    .plan-content .img{
+        width: 30px;
+    }
+    .plan-content .plan-desc h2{
+        font-size: 14px;
+    }
+    .plan-content .plan-desc span{
+        font-size: 12px;
+    }
+    .plan-content a{
+        font-size: 12px;
+    }
+
+    .plan-btn{
+        width: 90%;
+        background: hsl(245, 75%, 52%);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
